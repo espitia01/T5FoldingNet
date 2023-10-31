@@ -2,7 +2,7 @@
 
 This project aims to predict the folding configurations of proteins based on their amino acid sequences using a Transformer model, specifically the T5 (Text-To-Text Transfer Transformer).
 
-
+![](ani.gif)
 
 ## Model Description
 
