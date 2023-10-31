@@ -32,7 +32,7 @@ Here's how to interpret the output:
 - The third step is [0, 1], which means the protein moves upwards.
 - The fourth step is [-1, 0], which means the protein moves to the left.
 
-The model is hosted <a href="https://huggingface.co/gespitia1/T5FoldNet"></a>
+The model is hosted <a href="https://huggingface.co/gespitia1/T5FoldNet">here</a>
 
 ## Post-processing
 
