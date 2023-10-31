@@ -1,6 +1,6 @@
 # Protein Folding Prediction using T5FoldNet
 
-This project aims to predict the folding configurations of proteins based on their amino acid sequences using a Transformer model, specifically the T5 (Text-To-Text Transfer Transformer).
+This project aims to predict the tertirary folding configuration of proteins based on their amino acid sequences using a Transformer model, specifically the T5 (Text-To-Text Transfer Transformer).
 
 ![](ani.gif)
 
@@ -14,9 +14,9 @@ The dataset contains over 600,000 rows of data, with each row representing a pro
 
 ## Input
 
-The input to the model is a string representing the amino acid sequence of a protein. The sequence is tokenized using the T5 tokenizer before being fed into the model. Each amino acid in the sequence is represented as a one-hot encoded vector, where each vector has a dimension of n, and n is the number of unique amino acids. In the one-hot encoding, the position corresponding to the specific amino acid is set to 1, while all other positions are set to 0.
+The input to the model is a string representing the amino acid sequence of a protein. The sequence is tokenized using the T5 tokenizer before being fed into the model. Each amino acid in the sequence is represented as a one-hot encoded vector, where each vector has a dimension of n, and n is the number of unique amino acids. In the one-hot encoding, the position corresponding to the specific amino acid is set to 1 (H), while all other positions are set to 0 (P).
 
-Example Input: `1 0 0 1 0 0 0 0 1 0 0 0`
+Example Input: `H P P H P P P P H P P P ->  1 0 0 1 0 0 0 0 1 0 0 0 `
 
 ## Output
 
@@ -34,6 +34,7 @@ Here's how to interpret the output:
 
 The model is hosted <a href="https://huggingface.co/gespitia1/T5FoldNet">here</a>
 
+To plot the output, simply use the HPShow helper function found in this <a href = "https://github.com/espitia01/HPSampler">repository</a>
 ## Post-processing
 
 To improve the accuracy of the model's predictions, several post-processing steps can be considered:
